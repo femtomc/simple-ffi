@@ -1,0 +1,11 @@
+name:            simple-ffi
+version:         0.1.0.0
+cabal-version: >= 1.2
+build-type:      Simple
+
+executable main
+  main-is:       Main.hs
+  build-depends: base >= 4.9
+  extra-libraries: libcfile
+  ghc-options: -Wall
+  cc-options: -Wall -Werror
